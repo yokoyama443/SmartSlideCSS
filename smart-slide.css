@@ -1,0 +1,87 @@
+/* smart-slide.css */
+
+section {
+  padding: 1em !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+div.title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.content {
+  flex: 3;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.note {
+    display: inline-block;
+    flex: 1;
+    padding: 4px;
+    margin-left: 1em;
+    font-size: small;
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  section[data-size="4:3"] > div.note {
+    display: none;
+  }
+
+
+/* Markdown element styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+div.note>p {
+  font-size: small;
+  margin: 0;
+}
+
+div.note > marp-pre{
+  padding: 8px!important;
+}
