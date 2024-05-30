@@ -93,20 +93,39 @@ h3 {
 
 p {
   margin: 0 0 1em;
+  font-size: 0.9em;
 }
 
 ul {
   padding-left: 1em;
+  font-size: 0.9em;
 }
 
 li {
   margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+code {
+  font-size: 0.8em !important;
+  background-color: #f8f8f8;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
 }
 
 div.note>p {
   margin: 0;
+  font-size: 1.1em;
+}
+
+div.note>h3 {
+  font-size: 1.4em !important;
 }
 
 div.note>marp-pre {
   padding: 8px !important;
+}
+
+div.note>marp-pre>code {
+  font-size: 1em !important;
 }
